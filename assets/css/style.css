@@ -353,9 +353,9 @@
     }
 }
 
-@media (max-width: 564.98px) {
-    .section-2 .section-content .icon-title{
-        margin-right: 0;
+@media (max-width: 563.98px){
+    .section-2 .section-content .icon-content {
+        justify-content: space-around;
     }
 }
 
@@ -576,7 +576,7 @@
 
 .section-5 .inner-wrap .inner-content{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .section-5 .inner-content .inner-item{
@@ -633,6 +633,7 @@
 
     .section-5 .inner-wrap .inner-content{
         flex-wrap: wrap;
+        justify-content: space-around;
     }
     .section-5 .inner-content .inner-item{
         width: 45%;
@@ -748,7 +749,7 @@
     .section-6 .inner-wrap .inner-item {
         text-align: center;
         margin-left: calc( 100px / 5%);
-        margin-right: 100px;
+        /* margin-right: 100px; */
     }
     .section-6 .inner-wrap .inner-item span{
         padding-right: 250px;
@@ -1028,7 +1029,7 @@
 
 @media (max-width: 1199.98px) {
     .section-8 .container .inner-wrap {
-        margin-right: -40px;
+        margin-right: -35px;
     }
 
     .section-8 .inner-content{
@@ -1148,60 +1149,88 @@
     color: #777777;
 }
 
-@media (max-width: 1199.98px) {
-    .section-9 .inner-feedback {
-        margin-right: -70px;
-    }
-}
-
 @media (max-width: 991.98px){
 
     .section-9 .inner-feedback{
         flex-wrap: wrap;
+        justify-content: space-around;
     }
 
     .section-9 .inner-feedback .inner-item{
-        width: 39%;
+        width: 43%;
         margin-bottom: 30px;
         text-align: center;
     }
 
-    .section-9 .inner-feedback .inner-item:nth-child(2){
+    /* .section-9 .inner-feedback .inner-item:nth-child(2){
         margin-right: 80px;
     }
 
     .section-9 .inner-feedback .inner-item:nth-child(3){
         margin-left: auto;
         margin-right: auto;
-    }
+    } */
 }
 
 @media (max-width: 767.98px){
+
+    .section-9 .inner-feedback .inner-item{
+        width: 40%;
+    }
+
+    .section-9 .inner-content {
+        text-align: center;
+    }
+
     .section-9 .inner-member .inner-img img{
         margin-right: 10px;
     }
-    .section-9 .inner-feedback .inner-item:nth-child(2) {
+    /* .section-9 .inner-feedback .inner-item:nth-child(2) {
         margin-right: 65px;
+    } */
+
+    .section-9 .inner-item .inner-comment {
+        font-size: 22px;
     }
 }
 
 @media (max-width: 575.98px) {
 
+    .section-9 .inner-content {
+        text-align: center;
+    }
+
     .section-9 .inner-feedback .inner-item{
         width: 100%;
-        margin-right: 70px
+        /* margin-right: 70px */
     }
 
     .section-9 .inner-member .inner-img img {
         margin-right: 40px;
     }
 
-    .section-9 .inner-feedback .inner-item:nth-child(2),.section-9 .inner-feedback .inner-item:nth-child(3){
+    /* .section-9 .inner-feedback .inner-item:nth-child(2),.section-9 .inner-feedback .inner-item:nth-child(3){
         margin-right: 70px;
+    } */
+
+    .section-9 .inner-content .inner-desc {
+        font-size: calc( 1.7349999999999999rem + (3.1 - 1.7349999999999999) * ((100vw - 20rem) / (60 - 20)));
+    }
+
+    .section-9 .inner-member .inner-name {
+        font-size: 20px;
+    }
+
+    .section-9 .inner-feedback {
+        margin-right: -20px;
+    }
+
+    .section-9 .inner-item .inner-comment {
+        font-size: 20px;
     }
 }
 
-@media (max-width: 354.98px) {
+@media (max-width: 364.98px) {
 
     .header .header-logo img {
         width: 35px;
@@ -1213,7 +1242,20 @@
     }
 
     .section-9 .inner-member .inner-img img {
-        margin-right: 20px;
+        margin-right: 10px;
+    }
+
+    .section-9 .inner-item .inner-comment {
+        font-size: 17px;
+    }
+
+    .section-9 .inner-feedback .inner-item {
+        margin-left: 30px;
+    }
+
+    /* CSS ké */
+    .section-7 .inner-wrap .inner-content .desc-content {
+        font-size: 40px;
     }
 }
 /* END SECTION-9 */
@@ -1508,3 +1550,26 @@
 }
 
 /* END SECTION-12 */
+
+/* FIX RESPONSIVE */
+
+/* @media (max-width: 1199.98px) {
+    .section-5 .inner-content .inner-item {
+        margin-right: -40px;
+    }
+
+    .section-9 .inner-feedback .inner-item {
+        width: 32%;
+        margin-right: -10px;
+    }
+} */
+
+/* @media (max-width: 1092.98px){
+    .section-7 .members-list .inner-member,.section-5 .inner-content .inner-item,.section-8 .container .inner-wrap {
+        margin-right: -35px;
+    }
+    .section-9 .inner-feedback .inner-item {
+        width: 32%;
+        margin-right: -5px;
+    }
+} */
